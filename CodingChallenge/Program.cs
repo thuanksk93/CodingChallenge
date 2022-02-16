@@ -96,7 +96,10 @@ namespace CodingChallenge
                 else if (item == currentScore)
                 {
                     currentTotalScore += item;
-                    totalMax = currentTotalScore;
+                    if (currentTotalScore > totalMax)
+                    {
+                        totalMax = currentTotalScore;
+                    }
                 }
             }
 
